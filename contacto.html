@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contadores Asociados S.A. de C.V.</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="font-family: Arial;">
+	<h1>Bienvenido al portal web de Contadores Asociados S.A. de C.V.</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="nosotros.html">Acerca de nosotros</a></li>
+			<li><a href="contacto.html">Contáctanos</a></li>
+		</ul>
+	</nav>
+	<h2 style="text-align: center; font-family: Arial; margin-top: 20px;">
+		Agende una cita con nosotros
+	</h2>
+	<div style="margin-top: 20px;" class="Contacto">
+		<form style="border: solid;" action="https://formsubmit.co/vigilvictor009@gmail.com" method="POST">
+			<input type="hidden" name="_template" value="table">
+			<input type="hidden" name="_next" value="https://localhost/Proyecto/contacto.html">
+			<input type="hidden" name="_autoresponse" value="Aquí tiene una copia de los datos que ingresó en el formulario">
+			<input style="font-family: Arial;" type="text" placeholder="Escriba su nombre completo" name="nombre" required>
+			<input style="font-family: Arial;" type="email" placeholder="Escriba su correo electrónico" name="email" required>
+			<textarea style="font-family: Arial;" type="text" placeholder="Describa brevemente el motivo de su cita" name="mensaje" required></textarea>
+			<span>Seleccione una fecha y hora para su cita a continuación:</span>
+			<label>Fecha:</label>
+			<input type="date" name="fecha" required>
+			<label>Hora:</label>
+			<h4>Tenga en cuenta al seleccionar, que usted tendrá 1 hora de atención con su contador, el fin de horario laboral es a las 14:00 horas</h4>
+			<select name="hora" required>
+				<option value="09:00 a.m.">09:00 a.m.</option>
+				<option value="10:00 a.m.">10:00 a.m.</option>
+				<option value="11:00 a.m.">11:00 a.m.</option>
+				<option value="12:00 p.m.">12:00 p.m.</option>
+				<option value="01:00 p.m.">01:00 p.m.</option>
+			</select>
+			<input style="font-family: Verdana;" type="submit">
+			<input style="font-family: Verdana;" type="reset" name="Limpiar datos">
+		</form>
+	</div>
+</body>
+</html>
